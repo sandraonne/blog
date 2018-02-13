@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Loomise aeg: Veebr 09, 2018 kell 08:08 EL
+-- Loomise aeg: Veebr 13, 2018 kell 10:40 PL
 -- Serveri versioon: 10.1.28-MariaDB
 -- PHP versioon: 7.1.11
 
@@ -37,8 +37,9 @@ CREATE TABLE `post` (
 --
 
 INSERT INTO `post` (`post_id`, `post_subject`, `post_text`, `post_created`, `user_id`) VALUES
-(1, 'Postitus 1', 'See on esimene postitus.', '2018-02-02 20:03:02', 1),
-(2, 'Postitus2', 'See on postitus 2.', '2018-02-09 06:48:45', 1);
+  (1, 'Postitus 1', 'See on esimene postitus.', '2018-02-02 20:03:02', 1),
+  (2, 'Postitus2', 'See on postitus 2.', '2018-02-09 06:48:45', 1),
+  (3, 'Postitus 3', 'See on postitus 3.', '2018-02-09 07:12:13', 1);
 
 -- --------------------------------------------------------
 
@@ -61,33 +62,33 @@ CREATE TABLE `translations` (
 --
 
 INSERT INTO `translations` (`translation_id`, `phrase`, `language`, `translation`, `controller`, `action`) VALUES
-(1, 'Action', 'en', '{untranslated}', 'welcome', 'index'),
-(2, 'Server returned response in an unexpected format', 'en', '{untranslated}', 'global', 'global'),
-(3, 'Forbidden', 'en', '{untranslated}', 'global', 'global'),
-(4, 'Server returned an error', 'en', '{untranslated}', 'global', 'global'),
-(5, 'Action', 'en', '{untranslated}', 'halo', 'index'),
-(6, 'Logout', 'en', '{untranslated}', 'global', 'global'),
-(7, 'Settings', 'en', '{untranslated}', 'global', 'global'),
-(8, 'Logged in as', 'en', '{untranslated}', 'global', 'global'),
-(9, 'Log out', 'en', '{untranslated}', 'global', 'global'),
-(10, 'Action', 'et', '{untranslated}', 'welcome', 'index'),
-(11, 'Log out', 'et', '{untranslated}', 'global', 'global'),
-(12, 'Server returned response in an unexpected format', 'et', '{untranslated}', 'global', 'global'),
-(13, 'Forbidden', 'et', '{untranslated}', 'global', 'global'),
-(14, 'Server returned an error', 'et', '{untranslated}', 'global', 'global'),
-(15, 'Please sign in', 'et', '{untranslated}', 'global', 'global'),
-(16, 'Email', 'et', '{untranslated}', 'global', 'global'),
-(17, 'Password', 'et', '{untranslated}', 'global', 'global'),
-(18, 'Sign in', 'et', '{untranslated}', 'global', 'global'),
-(19, 'Wrong username or password', 'en', '{untranslated}', 'global', 'global'),
-(20, 'Please sign in', 'en', '{untranslated}', 'global', 'global'),
-(21, 'Email', 'en', '{untranslated}', 'global', 'global'),
-(22, 'Password', 'en', '{untranslated}', 'global', 'global'),
-(23, 'Sign in', 'en', '{untranslated}', 'global', 'global'),
-(24, 'Oops...', 'en', '{untranslated}', 'global', 'global'),
-(25, 'Close', 'en', '{untranslated}', 'global', 'global'),
-(26, 'Server returned an error. Please try again later ', 'en', '{untranslated}', 'global', 'global'),
-(27, 'Action', 'en', '{untranslated}', 'global', 'global');
+  (1, 'Action', 'en', '{untranslated}', 'welcome', 'index'),
+  (2, 'Server returned response in an unexpected format', 'en', '{untranslated}', 'global', 'global'),
+  (3, 'Forbidden', 'en', '{untranslated}', 'global', 'global'),
+  (4, 'Server returned an error', 'en', '{untranslated}', 'global', 'global'),
+  (5, 'Action', 'en', '{untranslated}', 'halo', 'index'),
+  (6, 'Logout', 'en', '{untranslated}', 'global', 'global'),
+  (7, 'Settings', 'en', '{untranslated}', 'global', 'global'),
+  (8, 'Logged in as', 'en', '{untranslated}', 'global', 'global'),
+  (9, 'Log out', 'en', '{untranslated}', 'global', 'global'),
+  (10, 'Action', 'et', '{untranslated}', 'welcome', 'index'),
+  (11, 'Log out', 'et', '{untranslated}', 'global', 'global'),
+  (12, 'Server returned response in an unexpected format', 'et', '{untranslated}', 'global', 'global'),
+  (13, 'Forbidden', 'et', '{untranslated}', 'global', 'global'),
+  (14, 'Server returned an error', 'et', '{untranslated}', 'global', 'global'),
+  (15, 'Please sign in', 'et', '{untranslated}', 'global', 'global'),
+  (16, 'Email', 'et', '{untranslated}', 'global', 'global'),
+  (17, 'Password', 'et', '{untranslated}', 'global', 'global'),
+  (18, 'Sign in', 'et', '{untranslated}', 'global', 'global'),
+  (19, 'Wrong username or password', 'en', '{untranslated}', 'global', 'global'),
+  (20, 'Please sign in', 'en', '{untranslated}', 'global', 'global'),
+  (21, 'Email', 'en', '{untranslated}', 'global', 'global'),
+  (22, 'Password', 'en', '{untranslated}', 'global', 'global'),
+  (23, 'Sign in', 'en', '{untranslated}', 'global', 'global'),
+  (24, 'Oops...', 'en', '{untranslated}', 'global', 'global'),
+  (25, 'Close', 'en', '{untranslated}', 'global', 'global'),
+  (26, 'Server returned an error. Please try again later ', 'en', '{untranslated}', 'global', 'global'),
+  (27, 'Action', 'en', '{untranslated}', 'global', 'global');
 
 -- --------------------------------------------------------
 
@@ -110,7 +111,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `is_admin`, `password`, `email`, `deleted`, `name`) VALUES
-(1, 1, '$2y$10$vTje.ndUFKHyuotY99iYkO.2aHJUgOsy2x0RMXP1UmrTe6CQsKbtm', 'demo@example.com', 0, 'Demo User');
+  (1, 1, '$2y$10$vTje.ndUFKHyuotY99iYkO.2aHJUgOsy2x0RMXP1UmrTe6CQsKbtm', 'demo@example.com', 0, 'Demo User');
 
 --
 -- Indeksid tõmmistatud tabelitele
@@ -144,7 +145,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT tabelile `post`
 --
 ALTER TABLE `post`
-  MODIFY `post_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `post_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT tabelile `translations`
